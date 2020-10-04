@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.1" />
+    <errors>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398">
+            <location file="HeartFailure.cc" line="78" column="5" />
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398">
+            <location file="HeartFailure.cc" line="96" column="5" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classperson{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classperson{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="HeartFailure.h" file="person.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classdisease{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classdisease{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="disease.h" line="6" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classperson{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classperson{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="patient.h" file="person.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classperson{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classperson{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="person.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classreport{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classreport{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="report.h" line="4" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error">
+            <location file="testfile.cc" line="76" column="1" />
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Number_of_patients&apos; is never used." verbose="The function &apos;Number_of_patients&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="145" column="0" />
+            <symbol>Number_of_patients</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_patient&apos; is never used." verbose="The function &apos;add_patient&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="9" column="0" />
+            <symbol>add_patient</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;count_died_with_alldiseases&apos; is never used." verbose="The function &apos;count_died_with_alldiseases&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="28" column="0" />
+            <symbol>count_died_with_alldiseases</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;display&apos; is never used." verbose="The function &apos;display&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="135" column="0" />
+            <symbol>display</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ids_of_all_patients_alive_with_alldiseases&apos; is never used." verbose="The function &apos;ids_of_all_patients_alive_with_alldiseases&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="46" column="0" />
+            <symbol>ids_of_all_patients_alive_with_alldiseases</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;max_ejection_fraction&apos; is never used." verbose="The function &apos;max_ejection_fraction&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="74" column="0" />
+            <symbol>max_ejection_fraction</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;min_platelet_count&apos; is never used." verbose="The function &apos;min_platelet_count&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="91" column="0" />
+            <symbol>min_platelet_count</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;patients_died_ageRange&apos; is never used." verbose="The function &apos;patients_died_ageRange&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="109" column="0" />
+            <symbol>patients_died_ageRange</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;patients_have_alldiseases_below_age&apos; is never used." verbose="The function &apos;patients_have_alldiseases_below_age&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="122" column="0" />
+            <symbol>patients_have_alldiseases_below_age</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;patients_with_smokinghabit&apos; is never used." verbose="The function &apos;patients_with_smokinghabit&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="62" column="0" />
+            <symbol>patients_with_smokinghabit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;remove_patient&apos; is never used." verbose="The function &apos;remove_patient&apos; is never used." cwe="561">
+            <location file="HeartFailure.cc" line="14" column="0" />
+            <symbol>remove_patient</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>
