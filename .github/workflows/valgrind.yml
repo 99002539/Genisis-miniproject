@@ -19,5 +19,4 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: test
       run: |
-        g++  Genisis-miniproject/test/testfile.cc -o all.out
-        valgrind ./all.out
+       valgrind chmod 777 ./project/all.out        
